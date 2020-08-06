@@ -875,6 +875,11 @@ class NodeScopeResolverTest extends \PHPStan\Testing\TestCase
 			],
 			[
 				$testScope,
+				'mergeOfLiteralArrays',
+				"array(0 => 'b', 'foo' => 'fighters', 1 => 'a' , 2 => 'c')",
+			],
+			[
+				$testScope,
 				'variableIncrementedInClosurePassedByReference',
 				'int',
 			],

@@ -96,6 +96,11 @@ class Foo
 		$anotherIntProperty = $this->anotherIntProperty;
 		$anotherStaticIntProperty = self::$anotherStaticIntProperty;
 
+		$mergeOfLiteralArrays = array_merge(
+			[3 => 'b', 'foo' => 'bar', 2 => 'a'],
+			[-1 => 'c', 'foo' => 'fighters']
+		);
+
 		$variableIncrementedInClosurePassedByReference = 0;
 		$anotherVariableIncrementedInClosure = 0;
 		$yetAnotherVariableInClosurePassedByReference = 0;
